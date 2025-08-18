@@ -59,7 +59,7 @@ const initialState = {
       ],
       techStack: ['Node.js', 'Worker Threads', 'Child Process', 'TCP', 'RDB Persistence', 'Pub/Sub'],
       github: 'https://github.com/marcos-para-garud/my-redis-project',
-      liveDemo: ''
+      liveDemo: 'https://flashcache-ui.onrender.com/'
     },
     {
       id: 2,

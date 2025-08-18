@@ -104,58 +104,8 @@ const About = () => {
             </Typography>
           </motion.div>
 
-          <Grid container spacing={6} alignItems="center">
-            {/* Left Side - Avatar and Basic Info */}
-            <Grid item xs={12} md={4}>
-              <motion.div variants={itemVariants} className="text-center">
-                <Box className="mb-6" data-aos="zoom-in">
-                  <Avatar
-                    src="/akash-pic.jpeg"
-                    alt="Akash Agrawal"
-                    sx={{
-                      width: 200,
-                      height: 200,
-                      margin: '0 auto',
-                      backgroundColor: mode === 'dark' ? '#374151' : '#e5e7eb',
-                      border: mode === 'dark' 
-                        ? '4px solid rgba(96, 165, 250, 0.3)' 
-                        : '4px solid rgba(37, 99, 235, 0.3)',
-                      fontSize: '4rem',
-                      color: mode === 'dark' ? '#60a5fa' : '#2563eb',
-                    }}
-                  />
-                
-                </Box>
-                
-                <Typography 
-                  variant="h4" 
-                  className={`mb-2 font-bold ${
-                    mode === 'dark' ? 'text-white' : 'text-gray-900'
-                  }`}
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  {personalInfo.name}
-                </Typography>
-                
-                <Typography 
-                  variant="h6" 
-                  className={`mb-4 ${
-                    mode === 'dark' ? 'text-blue-400' : 'text-blue-600'
-                  }`}
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  {personalInfo.title}
-                </Typography>
-
-
-              </motion.div>
-            </Grid>
-
-            {/* Right Side - Professional Summary */}
-            <Grid item xs={12} md={8}>
-              <motion.div variants={itemVariants}>
+          {/* Professional Summary - Full Width */}
+          <motion.div variants={itemVariants} className="mb-12">
                 <Typography 
                   variant="h4" 
                   className={`mb-6 font-semibold ${
@@ -176,9 +126,7 @@ const About = () => {
                 >
                   {professionalSummary}
                 </Typography>
-              </motion.div>
-            </Grid>
-          </Grid>
+          </motion.div>
 
           {/* Highlights Section */}
           <motion.div variants={itemVariants} className="mt-16">

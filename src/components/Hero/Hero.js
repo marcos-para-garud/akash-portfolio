@@ -415,29 +415,19 @@ const Hero = () => {
                 className="flex justify-center"
               >
                 <Zoom in={true} timeout={1000}>
-                  <Box
-                    className="relative w-80 h-80 rounded-full overflow-hidden floating shadow-2xl"
+                  <img 
+                    src="/akash-pic.png" 
+                    alt="Akash Agrawal"
+                    className="floating shadow-2xl"
                     data-aos="zoom-in"
                     data-aos-delay="600"
-                    sx={{
-                      backgroundColor: mode === 'dark' ? '#374151' : '#ffffff',
-                      border: mode === 'dark' 
-                        ? '3px solid rgba(96, 165, 250, 0.3)' 
-                        : '3px solid rgba(37, 99, 235, 0.3)',
-                      boxShadow: mode === 'dark' 
-                        ? '0 25px 50px -12px rgba(0, 0, 0, 0.5)' 
-                        : '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                    style={{
+                      maxWidth: '350px',
+                      width: '100%',
+                      height: 'auto',
+                      borderRadius: '12px'
                     }}
-                  >
-                    <img 
-                      src="/akash-pic.jpeg" 
-                      alt="Akash Agrawal"
-                      className="w-full h-full object-cover"
-                      style={{
-                        borderRadius: '50%'
-                      }}
-                    />
-                  </Box>
+                  />
                 </Zoom>
               </motion.div>
             </Grid>
